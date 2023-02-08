@@ -1,0 +1,211 @@
+$color-one: #00477a;
+$color-two: #4a7cba;
+$color-three: #e8f7ec;
+
+@media (max-width: 768px) {
+  .home-box {
+    background-size: cover;
+
+    .home {
+      .bottom-side {
+        margin-top: 50%;
+        width: auto;
+        height: auto;
+        display: block;
+
+        .left-btn {
+          width: 55%;
+          margin: 0 auto;
+          font-size: 18px;
+        }
+
+        .right-btn {
+          width: 55%;
+          margin: 30px auto 0 auto;
+          font-size: 18px;
+        }
+
+      }
+    }
+  }
+
+  .add-deceased {
+    .title {
+      width: 80%;
+      margin: 30px auto 0 auto;
+    }
+
+    .inputs {
+      width: 80%;
+    }
+  }
+
+  .search-deceased {
+
+
+    .title {
+      width: 80%;
+      margin: 30px auto 0 auto;
+    }
+
+    .inputs {
+      width: 80%;
+      margin: 20px auto;
+    }
+  }
+
+  .about-deceased {
+
+    .about-box {
+      width: 90%;
+      margin: 30px auto;
+
+      .photo {
+        width: 95%;
+      }
+    }
+  }
+
+  .about-us {
+
+    .bottom-side {
+      margin-top: 30px;
+      width: 90%;
+      display: block;
+
+      .left-side {
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+      }
+
+      .right-side {
+        width: 100%;
+        height: 50%;
+      }
+    }
+
+  }
+
+  .manual-site {
+    .bottom-side {
+      margin-top: 30px;
+      width: 90%;
+      display: block;
+
+      .left-side {
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+      }
+
+      .right-side {
+        width: 100%;
+        height: 50%;
+      }
+    }
+
+  }
+
+  .news {
+    .bottom-side {
+      width: 90%;
+      height: 600px;
+      margin: 50px auto;
+      display: block;
+
+      .left-side {
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+      }
+
+      .right-side {
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+      }
+    }
+  }
+
+  .information-container {
+
+    .info-box {
+      width: 100%;
+      height: calc(100vh - 90px);
+      display: block;
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        .items {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin: 0 auto;
+          div {
+            margin: 20px auto 0 auto;
+            width: 32%;
+            height: 50px;
+            text-align: center;
+            border-radius: 20px;
+            padding-left: 0px;
+            font-size: 12px;
+            justify-content: center;
+          }
+
+          .active {
+            margin: 20px auto 0 auto;
+            width: 32%;
+            height: 50px;
+            text-align: center;
+            border-radius: 20px;
+            padding-left: 0px;
+            font-size: 12px;
+
+          }
+        }
+      }
+
+      .right {
+        width: 90%;
+        height: auto;
+        margin: 40px auto;
+        .title {
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          color: $color-two;
+        }
+
+        .bottom {
+          margin-top: 20px;
+          width: 100%;
+          height: 94%;
+          display: block;
+          .left {
+            width: 100%;
+            height: 50%;
+          }
+
+          .right {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .not-found{
+    img {
+      width: 90%;
+      height: 50%;
+    }
+  }
+
+}

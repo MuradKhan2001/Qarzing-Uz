@@ -1,0 +1,195 @@
+$color-one: #00477a;
+$color-two: #4a7cba;
+$color-three: #e8f7ec;
+
+.navbar-container{
+  width: 90%;
+  height: 80px;
+  background-color: $color-two;
+  padding-right:25px;
+  padding-left:25px;
+  border-radius: 20px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  .nav-brand{
+    img{
+      width: 75px;
+    }
+  }
+  .nav-menu-desktop {
+    width: 82%;
+    margin-bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .nav-item{
+      color: $color-three;
+      margin-right: 30px;
+      list-style: none;
+      font-size: 19px;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+      transition: .4s;
+      cursor: pointer;
+      padding-bottom: 5px;
+      &:hover{
+        color: $color-three;
+        border-bottom: 2px solid $color-three;
+      }
+    }
+  }
+  .nav-menu-mobile{
+    display: none;
+  }
+  .profile{
+    .login-btn{
+      height: 35px;
+      background-color: $color-three;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-two;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: .3s;
+      cursor: pointer;
+      padding-left: 15px;
+      padding-right: 15px;
+      &:hover{
+        background-color: white;
+      }
+    }
+    .user-profile{
+      .dropdown{
+        display: flex;
+        .dropdown-toggle{
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          outline: none !important;
+          color: white;
+          font-size: 14px;
+          &:focus{
+            outline: none;
+          }
+          .Name{
+            margin-left: 10px;
+            color: white;
+          }
+          img{
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+  .language-box{
+    .dropdown{
+
+      .dropdown-toggle{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+      }
+      .dropdown-menu{
+        font-size: 14px;
+      }
+    }
+  }
+  .burger-for-menu{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .navbar-container{
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    .nav-brand{
+      img{
+        width: 75px;
+      }
+    }
+    .nav-menu-desktop {
+      display: none;
+    }
+    .nav-menu-mobile{
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      display: block;
+      overflow: hidden;
+      .nav-menu{
+        width: 100%;
+        height: 78%;
+        background-color: #4a7cba;
+        transition: .4s;
+        padding: 20px 30px 0 20px;
+        border-radius: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        .xbtn{
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          img{
+            width: 25px;
+          }
+        }
+        .nav-item{
+          color: white;
+          list-style: none;
+          font-size: 20px;
+          font-weight: 600;
+          transition: .4s;
+          cursor: pointer;
+          margin-top: 35px;
+        }
+      }
+    }
+    .hide-menu{
+      display: none;
+    }
+    .profile{
+      .login-btn{
+        font-weight: 500;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    .burger-for-menu{
+      display: flex;
+      img{
+        width: 30px;
+      }
+    }
+    .language-box{
+      .dropdown{
+        display: flex;
+        .dropdown-toggle{
+          font-size: 10px;
+        }
+        .dropdown-menu{
+          font-size: 10px;
+          .dropdown-item{
+            &:hover{
+              background-color: white;
+              color: black;
+            }
+            &:focus{
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {createContext, useState, useMemo} from 'react';
+import {Routes, Route} from "react-router-dom";
+import {MainRoutes} from "./routes";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export const MyContext = createContext();
+
+function App(props) {
+
+    const [url, setUrl] = useState('http://139.144.186.40/');
+
+    return (
+        <MyContext.Provider value={{
+            url,
+        }}>
+            <Routes>
+                {
+                    MainRoutes.map((route, index) => (
+                        <Route key={index} {...route} />
+                    ))
+                }
+            </Routes>
+        </MyContext.Provider>
+    );
 }
 
 export default App;
