@@ -30,7 +30,7 @@ function ManualSite(props) {
                     </div>
                     <div className="right-side">
                         <div className="title">
-                            {t('menuFive')}
+                            {t('menuFour')}
                         </div>
                         <p>
                             {manualBox[manualBox.length - 1].description}
